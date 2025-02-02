@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar">
+              <img src="./images/avatar.jpg" alt="" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">
+                Oksana <br />
+                Motylivska
+              </div>
+              <div class="user__prof">Junior Developer</div>
+            </div>
+          </div>
+
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#my-projects">Project</a>
+            <a class="nav__link" href="#about-me">About Me</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#footer">Contact Me</a>
+          </nav>
+          <button class="burger" type="button" id="navToggle">
+            <img class="burger-icon" src="./images/bars-solid.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--Intro-->
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello i'm</h2>
+            <h1 class="intro__title">Oksana Motylivska</h1>
+            <div class="intro__text">Junior Developer</div>
+
+            <div class="social">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/__ksyuha__001/"
+                target="_blank"
+              >
+                <img
+                  src="./images/instagram_1384015.png"
+                  alt="instagram-profile"
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://web.telegram.org/"
+                target="_blank"
+              >
+                <img
+                  src="./images/telegram_2111710.png"
+                  alt="telegram-profile"
+                />
+              </a>
+              <a class="social__link" href="telephon:+380731737354">
+                <img src="./images/viber_3670033.png" alt="viber-profile" />
+              </a>
+              <a
+                class="social__link"
+                href="https://github.com/Oksana078"
+                target="_blank"
+              >
+                <img src="./images/github_11376339.png" alt="github-profile" />
+              </a>
+              <a class="social__link" href="https://discord.com">
+                <img src="./images/discord_3670325.png" alt="discord-profile" />
+              </a>
+            </div>
+
+            <div class="intro__resume">
+              <a
+                href="#resume"
+                class="resume__button"
+                data-modal="#modal_hire_me"
+                >HIRE ME</a
+              >
+            </div>
+            <img class="intro__photo" src="./images/Banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PROJECT -->
+    <div class="container" id="my-projects">
+      <section class="projects">
+        <div class="hero__title">
+          <h2>My projects</h2>
+        </div>
+
+        <div class="portfolio">
+          <div class="portfolio__col">
+            <div class="work__item" data-modal="#modal_project_1">
+              <img
+                class="work-image"
+                src="./images/Get The Promo Now.png"
+                alt=""
+              />
+              <div class="work__content">Project title</div>
+            </div>
+          </div>
+
+          <div class="portfolio__col">
+            <div class="work__item">
+              <img
+                class="work-image"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__content">Project title</div>
+            </div>
+          </div>
+
+          <div class="portfolio__col">
+            <div class="work__item">
+              <img
+                class="work-image"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__content">Project title</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--About-->
+      <section class="about" id="about-me">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__photo">
+              <img src="./images/girl.jpg" alt="" />
+            </div>
+
+            <div class="about__content">
+              <h3 class="about__title">ABOUT ME</h3>
+              <h2 class="about__bigtitle">WHO AM I</h2>
+              <div class="about__text">
+                <p>
+                  Hello! I'm a passionate and dedicated Junior Web Developer
+                  with a strong foundation in front-end development. I
+                  specialize in creating clean, responsive, and user-friendly
+                  websites using HTML, CSS, and JavaScript.
+                </p>
+                <p>
+                  With a keen eye for detail and a commitment to continuous
+                  learning, I am always striving to improve my skills and stay
+                  up to date with the latest web development trends. I enjoy
+                  turning ideas into interactive web experiences that are not
+                  only visually appealing but also functional and accessible.
+                </p>
+
+                <p>
+                  I have a solid understanding of HTML for structuring content,
+                  CSS for designing and laying out pages, and JavaScript for
+                  adding interactivity and dynamic elements. My goal is to
+                  contribute to exciting projects and grow as a developer by
+                  collaborating with talented teams and tackling new challenges.
+                </p>
+                <p>Let's build something amazing together!</p>
+              </div>
+              <div class="intro__resume">
+                <a
+                  href="#resume"
+                  class="resume__button"
+                  data-modal="#modal_hire_me"
+                  >HIRE ME</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills-->
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="skills__title">
+            <h2>My Skills</h2>
+          </div>
+
+          <ul class="skills__list">
+            <li class="skill">
+              <div class="skill__icon">
+                <img src="./images/git-alt-brands-solid.svg" alt="Git" />
+              </div>
+              <h3 class="skill__title">Git</h3>
+              <p class="skill__description">
+                The basics of working with Git for version control and project
+                collaboration.
+              </p>
+            </li>
+
+            <li class="skill">
+              <div class="skill__icon">
+                <img src="./images/html5-brands-solid.svg" alt="HTML" />
+              </div>
+              <h3 class="skill__title">HTML</h3>
+              <p class="skill__description">
+                HTML basics, web page structure and semantic tags.
+              </p>
+            </li>
+
+            <li class="skill">
+              <div class="skill__icon">
+                <img src="./images/css3-alt-brands-solid.svg" alt="CSS" />
+              </div>
+              <h3 class="skill__title">CSS</h3>
+              <p class="skill__description">
+                Web page styling, responsive layouts with Flexbox and Grid.
+              </p>
+            </li>
+
+            <li class="skill">
+              <div class="skill__icon">
+                <img src="./images/js-brands-solid.svg" alt="JS" />
+              </div>
+              <h3 class="skill__title">JavaScript</h3>
+              <p class="skill__description">
+                Programming basics and manipulating the DOM.
+              </p>
+            </li>
+
+            <li class="skill">
+              <div class="skill__icon">
+                <img src="./images/react-brands-solid.svg" alt="React" />
+              </div>
+              <h3 class="skill__title">React</h3>
+              <p class="skill__description">
+                React basics, components, and JSX.
+              </p>
+            </li>
+
+            <li class="skill">
+              <div class="skill__icon">
+                <img
+                  src="./images/free-icon-social-16066077.png"
+                  alt="jQuery"
+                />
+              </div>
+              <h3 class="skill__title">jQuery</h3>
+              <p class="skill__description">
+                The basics of working with jQuery, manipulating DOM elements,
+                and handling events.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">&copy; 2025 Junior Developer</div>
+
+            <div class="footer__social">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/__ksyuha__001/"
+                target="_blank"
+              >
+                <img src="./images/inst-footer.svg" width="20" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="https://web.telegram.org/"
+                target="_blank"
+              >
+                <img src="./images/tg-footer.svg" width="20" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="telephon:+380731737354"
+                target="_blank"
+              >
+                <img src="./images/viber-footer.svg" width="20" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="https://github.com/Oksana078"
+                target="_blank"
+              >
+                <img src="./images/github-footer.svg" width="20" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="https://discord.com"
+                target="_blank"
+              >
+                <img src="./images/discord-footer.svg" width="20" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#my-projects">Project</a>
+            <a class="footer__nav-link" href="#about-me">About Me</a>
+            <a class="footer__nav-link" href="#skills">Skills</a>
+            <a class="footer__nav-link" href="#footer">Contact Me</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modals 1 -->
+    <div class="modal" id="modal_project_1">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/circle-xmark-solid (1).svg" alt="" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780/000000/png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Project Title</h3>
+              <div class="modal-work__info">
+                website <span class="divider">&#10072;</span> 2024
+              </div>
+            </div>
+            <div class="modal-work__description">
+              <h4>Project description:</h4>
+              <p class="work-hero__title">FitPro - your fitness assistant.</p>
+              <div class="modal-work__text">
+                <p>
+                  Welcome to <span class="highlight">FitPro</span>, a fitness
+                  app that helps you achieve your fitness goals. With
+                  <span class="highlight">FitPro</span>, you'll have access to
+                  personalised training plans, nutrition monitoring and progress
+                  analysis, making your journey to a healthier life more
+                  efficient and convenient.
+                </p>
+                <h4>Our services:</h4>
+                <ul style="list-style-type: circle">
+                  <li>
+                    Training plans: Create personalised workouts that match your
+                    goals and fitness level.
+                  </li>
+                  <li>
+                    Nutrition monitoring: Track your nutrition and get
+                    recommendations for healthy eating.
+                  </li>
+                  <li>
+                    Progress analysis: Analyse your progress and get motivated
+                    to reach new heights.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                &#8249; Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next &#8250;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal HIRE ME -->
+    <div class="modal" id="modal_hire_me">
+      <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button" data-close="modal_hire_me">
+          <img src="./images/circle-xmark-solid (1).svg" alt="" />
+        </button>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="modal__title mb-0">Lets's talk!</h3>
+            <h4 class="modal__subtitle">call me or send me a request</h4>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <img
+                  class="contact__info-icon"
+                  src="./images/square-phone-solid (3).svg"
+                  alt=""
+                />
+                + 380 73 173 73 54
+              </li>
+              <li class="contact__info-item">
+                <img
+                  class="contact__info-icon"
+                  src="./images/envelope-solid.svg"
+                  alt=""
+                />
+                motylivska13@gmal.com
+              </li>
+            </ul>
+
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <label for="input-email" class="form__label"
+                  >Adress e-mail</label
+                >
+                <input
+                  class="form__input"
+                  name="input-email"
+                  type="text"
+                  id="input-email"
+                  placeholder="Adress e-mail"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="input-text" class="form__label">Request</label>
+                <textarea
+                  class="form__textarea"
+                  name="input-text"
+                  id="input-text"
+                  placeholder="Type your request..."
+                ></textarea>
+              </div>
+
+              <div class="text-right">
+                <button class="btn" type="submit">SEND</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__right">
+            <img src="./images/contacts.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JS-->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
