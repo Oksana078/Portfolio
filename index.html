@@ -6,6 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/professional-portfolio_3476457.png"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -117,7 +122,7 @@
             <div class="work__item" data-modal="#modal_project_1">
               <img
                 class="work-image"
-                src="./images/Get The Promo Now.png"
+                src="https://placehold.co/370x300"
                 alt=""
               />
               <div class="work__content">Project title</div>
@@ -125,10 +130,10 @@
           </div>
 
           <div class="portfolio__col">
-            <div class="work__item">
+            <div class="work__item" data-modal="#modal_project_2">
               <img
                 class="work-image"
-                src="https://placehold.it/370x300"
+                src="https://placehold.co/370x300"
                 alt=""
               />
               <div class="work__content">Project title</div>
@@ -136,10 +141,10 @@
           </div>
 
           <div class="portfolio__col">
-            <div class="work__item">
+            <div class="work__item" data-modal="#modal_project_3">
               <img
                 class="work-image"
-                src="https://placehold.it/370x300"
+                src="https://placehold.co/370x300"
                 alt=""
               />
               <div class="work__content">Project title</div>
@@ -255,23 +260,125 @@
               </p>
             </li>
 
-            <li class="skill">
+            <li class="skill center-skill">
               <div class="skill__icon">
-                <img
-                  src="./images/free-icon-social-16066077.png"
-                  alt="jQuery"
-                />
+                <img src="./images/figma-brands-solid.svg" alt="Figma" />
               </div>
-              <h3 class="skill__title">jQuery</h3>
+              <h3 class="skill__title">Figma</h3>
               <p class="skill__description">
-                The basics of working with jQuery, manipulating DOM elements,
-                and handling events.
+                The basics of working with Figma website layout, creation of
+                layouts, and for collaboration with the team during development.
+              </p>
+            </li>
+
+            <li class="skill center-skill">
+              <div class="skill__icon">
+                <img src="./images/api-interface_16699238.png" alt="WebApi" />
+              </div>
+              <h3 class="skill__title">Web API</h3>
+              <p class="skill__description">
+                Work with Web APIs to integrate external services, process
+                requests, and retrieve data for dynamic content on websites.
+              </p>
+            </li>
+
+            <li class="skill center-skill">
+              <div class="skill__icon">
+                <img src="./images/coding_2092417.png" alt="Coding" />
+              </div>
+              <h3 class="skill__title">Working with someone else's code</h3>
+              <p class="skill__description">
+                Ability to read, analyze, and integrate other people's code.
               </p>
             </li>
           </ul>
         </div>
       </section>
     </div>
+
+    <!--Education-->
+    <section class="education">
+      <div class="container">
+        <div class="education__title">
+          <h2>Education</h2>
+        </div>
+
+        <div class="education__content">
+          <div class="education__item">
+            <div class="education__certificate">
+              <img src="./images/certificaation 1.jpg" alt="Certificate 1" />
+            </div>
+            <div class="education__info">
+              <h3 class="education__course">
+                <span>responsive web design</span>
+              </h3>
+              <p class="education__institution">freeCodeCamp</p>
+              <p class="education__description">
+                After completing the &#10077; Responsive Web Design &#10078;
+                course, I acquired important skills and knowledge that are
+                necessary to create modern, user-friendly, and accessible web
+                pages.
+              </p>
+              <h4>Namely:</h4>
+              <ul style="list-style-type: circle">
+                <li class="education__list">
+                  I mastered the basics of HTML to create the structure of web
+                  pages and CSS to style the content.
+                </li>
+                <li class="education__list">
+                  During the course, I learned how to use CSS variables, which
+                  allows me to conveniently and flexibly manage styles, maintain
+                  consistency of colors and fonts.
+                </li>
+                <li class="education__list">
+                  While creating the quiz, I learned how to make web pages
+                  accessible to all users
+                </li>
+                <li class="education__list">
+                  I learned how to create web pages that display correctly on
+                  different devices (smartphones, tablets, desktops) using
+                  Flexbox and CSS Grid.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="education__item">
+            <div class="education__certificate">
+              <img src="./images/course 2.jpg" alt="Certificate 2" />
+            </div>
+            <div class="education__info">
+              <h3 class="education__course">
+                <span>Front-end React JS Web Development Course </span>
+              </h3>
+              <p class="education__institution">Apiko Academy</p>
+              <p class="education__description">
+                After completing the course &#10077; Front-end React JS Web
+                Development &#10078;, I gained important skills and knowledge in
+                web development and front-end development using React
+                technologies.
+              </p>
+              <h4>Namely:</h4>
+              <ul style="list-style-type: circle">
+                <li class="education__list">
+                  Work with React to create dynamic and interactive web
+                  applications.
+                </li>
+                <li class="education__list">
+                  Using JavaScript to develop web application logic.
+                </li>
+                <li class="education__list">
+                  Interact with WebAPI to receive and process data.
+                </li>
+                <li class="education__list">
+                  Work with DOM to manipulate page elements.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Footer-->
     <footer class="footer" id="footer">
@@ -386,6 +493,165 @@
                   <li>
                     Progress analysis: Analyse your progress and get motivated
                     to reach new heights.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                &#8249; Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next &#8250;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 2-->
+
+    <div class="modal" id="modal_project_2">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/circle-xmark-solid (1).svg" alt="" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780/000000/png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Online store ShoeZone</h3>
+              <div class="modal-work__info">
+                website <span class="divider">&#10072;</span> 2024
+              </div>
+            </div>
+            <div class="modal-work__description">
+              <h4>Project description:</h4>
+              <p class="work-hero__title">
+                ShoeZone - assistant in shoe selection.
+              </p>
+              <div class="modal-work__text">
+                <p>
+                  ShoeZone is an online shoe store for all ages and styles.
+                  Users can choose from different categories (men's, women's,
+                  children's shoes) and filter products by price, size, brand,
+                  and shoe type. Each product has a detailed description, photo,
+                  available sizes, and price. Users can add items to the cart,
+                  edit the quantity, or delete them. Placing an order involves
+                  entering delivery information. The site has a responsive
+                  design that ensures correct display on different devices
+                </p>
+                <h4>Main features:</h4>
+                <ul style="list-style-type: circle">
+                  <li>
+                    Main menu page: categories of dishes (for example,
+                    appetizers, main courses, desserts, drinks).
+                  </li>
+                  <li>
+                    The dish page: each dish has a name, description, photo,
+                    price, and an option to add to cart.
+                  </li>
+                  <li>
+                    Cart: the ability to add items to the cart, edit the
+                    quantity, and delete items.
+                  </li>
+                  <li>
+                    Checkout: a form for entering data and confirming the order.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                &#8249; Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next &#8250;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 3-->
+
+    <div class="modal" id="modal_project_3">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./images/circle-xmark-solid (1).svg" alt="" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="https://placehold.co/790x780/000000/png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Сafe menu</h3>
+              <div class="modal-work__info">
+                website <span class="divider">&#10072;</span> 2024
+              </div>
+            </div>
+            <div class="modal-work__description">
+              <h4>Project description:</h4>
+              <p class="work-hero__title">Café Delight</p>
+              <div class="modal-work__text">
+                <p>
+                  Café Delight is a web application for a cafe or restaurant
+                  that displays a menu with different categories of food and
+                  drinks. The user can browse dishes by category, filter them by
+                  type (for example, vegetarian dishes, desserts, drinks), and
+                  add dishes to the cart for easy ordering. The application has
+                  a responsive design that allows users to conveniently view the
+                  menu on mobile and desktop devices.
+                </p>
+                <h4>Main features:Натисни, щоб застосувати</h4>
+                <ul style="list-style-type: circle">
+                  <li>
+                    Home page: product categories (men's, women's, children's).
+                  </li>
+                  <li>
+                    Product page: description, photos, available sizes, price.
+                  </li>
+                  <li>
+                    Shopping cart: add products, edit quantity, delete products.
+                  </li>
+                  <li>Checkout: a form for entering data for delivery.</li>
+                  <li>
+                    Responsive design: support for mobile and desktop devices.
                   </li>
                 </ul>
               </div>

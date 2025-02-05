@@ -1,0 +1,141 @@
+// compress: true
+
+@import "vars";
+
+// Education //
+.education__title h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+
+  @media @tablet {
+    font-size: 1.8rem;
+  }
+
+  @media @mobile {
+    font-size: 1.5rem;
+  }
+}
+
+.education__course span {
+  text-transform: capitalize;
+}
+
+.education__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+
+  @media @tablet {
+    gap: 1.5rem;
+  }
+
+  @media @mobile {
+    gap: 1rem;
+  }
+}
+
+.education__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  @media @mobile {
+    gap: 1rem;
+  }
+}
+
+.education__certificate {
+  flex: 0 0 auto;
+  max-width: 300px; /* Змініть розмір за потребою */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: box-shadow 0.2s linear;
+
+  @media @tablet {
+    max-width: 250px;
+  }
+
+  @media @mobile {
+    max-width: 200px;
+  }
+}
+
+.education__certificate:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.education__certificate img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.education__info {
+  flex: 1;
+
+  @media @tablet {
+    text-align: center;
+  }
+
+  .education__course {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    @media @tablet {
+      font-size: 1.3rem;
+
+      @media @mobile {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .education__institution {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+
+    @media @tablet {
+      font-size: 1.1rem;
+    }
+
+    @media @mobile {
+      font-size: 1rem;
+    }
+  }
+
+  .education__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+
+    @media @tablet {
+      font-size: 0.9rem;
+    }
+
+    @media @mobile {
+      font-size: 0.8rem;
+    }
+  }
+
+  .education__list {
+    margin-left: -2rem;
+    padding: 3px;
+
+    @media @tablet {
+      margin-left: -1.5rem;
+    }
+
+    @media @mobile {
+      margin-left: -1rem;
+    }
+  }
+}

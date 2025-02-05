@@ -1,0 +1,40 @@
+// compress: true
+
+@import "vars";
+
+// User //
+.user {
+  display: flex;
+}
+
+.user__avatar {
+  width: 57px;
+  height: 57px;
+
+  img {
+    border-radius: 50%;
+    max-width: 57px;
+    max-height: 57px;
+  }
+}
+
+.user__content {
+  padding-left: 9px;
+}
+.user__name {
+  font-size: 1.06rem;
+  color: @black;
+  font-weight: 700;
+  line-height: 1.2rem;
+  margin-bottom: 3px;
+
+  @media tablet {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.user__prof {
+  font-size: 0.8rem;
+  color: fade(@black, 70%);
+}

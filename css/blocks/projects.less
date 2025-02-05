@@ -1,0 +1,73 @@
+// compress: true
+
+@import "vars";
+
+// PROJECT //
+.hero__title {
+  font-size: 2rem;
+  color: @black;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem 2.8rem;
+}
+
+.portfolio__col {
+  flex-basis: 33.33333%;
+  padding: 1rem;
+
+  @media @tablet {
+    flex-basis: 50%;
+  }
+
+  @media @mobile {
+    flex-basis: 50%;
+  }
+
+  @media @mobile-sm {
+    flex-basis: 100%;
+  }
+}
+
+.work__item {
+  box-shadow: 0 0 4px fade(#000, 25%);
+  border-radius: 10px;
+  text-align: center;
+
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 0 25px fade(#000, 25%);
+    cursor: pointer;
+  }
+
+  @media @mobile {
+    min-width: 370px;
+    margin: 0 auto;
+  }
+
+  @media @mobile-sm {
+    margin: 0 auto;
+  }
+}
+.work__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.work__content {
+  padding-bottom: 1.33rem;
+  font-size: 1.06rem;
+  color: @black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1rem 0.8rem;
+  text-align: center;
+}

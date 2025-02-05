@@ -1,0 +1,57 @@
+// compress: true
+
+@import "vars";
+
+// Nav //
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+
+  @media @mobile {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    display: none;
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+.nav__link {
+  margin-left: 2rem;
+  position: relative;
+
+  font-size: 0.93rem;
+  color: @black;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 0.66rem 2rem;
+
+  &:hover {
+    border-color: @black;
+    transition: border-color 1s linear;
+  }
+
+  @media @mobile {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+}
